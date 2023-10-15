@@ -1,0 +1,47 @@
+.educationContainer{
+    width: 100%;
+}
+
+.educationContainer h2{
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.educationContainer h1{
+    color: white;
+    text-align: center;
+    margin: 2rem 0;
+}
+.educationContent{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content:center;
+    align-items: center;
+    gap: 1.3rem;
+    margin: 0 2rem;
+}
+
+.highschool, .intermediate,.btech{
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    text-align: center;
+    padding: 2rem 1rem;
+    height: 14rem;
+    box-shadow: 3px 5px 10px rgba(110, 29, 241, 0.986);
+    line-height: 1.2rem;
+}
+
+.highschool:hover,.btech:hover,.intermediate:hover{
+    transform: scale(102%);
+    transition: 0.2s;
+}
+@media screen and (max-width:750px) {
+    .educationContent{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .highschool:hover,.btech:hover,.intermediate:hover{
+        transform: none;
+    }
+}

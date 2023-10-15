@@ -1,0 +1,31 @@
+.skillsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:left;
+}
+
+.skill{
+    color: white;
+    padding: 1.3rem 2rem;
+    border: 1px solid white;
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 3px 5px 6px rgba(110, 29, 241, 0.986);
+}
+
+.skill:hover{
+    transform: scale(110%);
+}
+#skillHeading{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width:740px) {
+    .skill:hover{
+        transform: none;
+    }
+}
+
